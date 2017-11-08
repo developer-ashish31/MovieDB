@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/translucent_black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.jb.risingstars.base.view.JBTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dip"
+            android:text=""
+            android:textColor="@color/heading"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateDrawable="@drawable/loading_progress" >
+        </ProgressBar>
+
+        <com.jb.risingstars.base.view.JBTextView
+            android:id="@+id/dialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal"
+            android:text="Please Wait..."
+            android:textColor="@color/heading"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</RelativeLayout>

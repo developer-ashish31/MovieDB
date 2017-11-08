@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_fragment_root_layout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5_dp"
+        android:paddingTop="@dimen/_5_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10_dp">
+
+            <TextView
+                android:id="@+id/home_fragment_popular_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Populor"
+                android:paddingBottom="@dimen/_5_dp"
+                android:visibility="gone"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/heading_text_size"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/popular_movie_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/home_fragment_top_rated_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Rated"
+                android:paddingTop="@dimen/_5_dp"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/_5_dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/heading_text_size"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/top_rated_movie_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/home_fragment_revenue_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revenue"
+                android:paddingTop="@dimen/_5_dp"
+                android:paddingBottom="@dimen/_5_dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/heading_text_size"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/revenue_movie_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

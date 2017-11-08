@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    
+    android:interpolator="@android:anim/linear_interpolator" >
+
+    <!-- Use startOffset to give delay between animations -->
+
+
+    <!-- Move -->
+    <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromXDelta="1%p"
+        android:startOffset="300"
+        android:repeatCount="infinite"
+        android:toXDelta="-15%p" />
+    <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromYDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="1100"
+        android:toYDelta="15%p" />
+    <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromXDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="1900"
+        android:toXDelta="15%p" />
+    <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromYDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="2700"
+        android:toYDelta="-15%p" />
+<translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromXDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="1900"
+        android:toYDelta="-15%p" />
+   <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromYDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="1100"
+        android:toYDelta="-15%p" />
+   <translate
+        android:duration="4000"
+        android:fillAfter="true"
+        android:fromXDelta="1%p"
+         android:repeatCount="infinite"
+        android:startOffset="300"
+        android:toYDelta="15%p" />
+   <!--  <rotate
+        android:duration="5000"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/cycle_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="3800"
+        android:repeatCount="infinite"
+        android:repeatMode="restart"
+        android:toDegrees="360" /> -->
+
+</set>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.intigral.moviedb._activities.MovieDetailsActivity">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/activity_movie_details_banner_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/large_default_image" />
+
+        <TextView
+            android:id="@+id/activity_movie_details_movie_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_movie_details_banner_imageview"
+            android:layout_margin="@dimen/_5_dp"
+            android:text="Move Name"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/activity_movie_details_rating_bar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_movie_details_movie_name_tv"
+            android:layout_marginBottom="@dimen/_5_dp"
+            android:layout_marginTop="@dimen/_5_dp"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/activity_movie_details_rating_bar"
+            android:layout_below="@id/activity_movie_details_movie_name_tv"
+            android:layout_marginLeft="@dimen/_10_dp"
+            android:layout_toRightOf="@id/activity_movie_details_rating_bar"
+            android:gravity="center"
+            android:text="Rating"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_movie_details_movie_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_movie_details_rating_bar"
+            android:layout_margin="@dimen/_5_dp"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</ScrollView>

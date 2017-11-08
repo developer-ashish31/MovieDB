@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/jb_dialog_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- <ImageView
+             android:id="@+id/image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/dialog_logo"
+             android:text=""
+             android:textColor="@color/heading"
+             android:textSize="16dip"
+             android:textStyle="bold" />
+ -->
+
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Rayonnement"
+            android:textColor="@color/button_color"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:text=""
+            android:textColor="@color/heading"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dip"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/heading"
+            android:textSize="16dip" />
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/custombutton2"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/greencolorbutton"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
